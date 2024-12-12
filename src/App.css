@@ -1,0 +1,322 @@
+@import url('https://fonts.googleapis.com/css2?family=Island+Moments&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@600&display=swap');
+
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  margin-bottom: 20px;
+}
+
+.header h1 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+.content {
+  display: flex;
+  gap: 60px;
+  padding: 0 60px;
+}
+
+.cal p{
+  font-family: 'Island Moments', cursive;
+  font-size: 3rem;
+  color: #f87777;
+  margin: 0;
+}
+.cal h2 {
+  margin: 0;
+  font-family: 'Abhaya Libre', sans-serif;
+  font-size: 2.5rem;
+  color: #222;
+}
+.calendar-section {
+  margin-top: 30px;
+  flex: 1;
+}
+
+.task-section {
+  flex: 2;
+}
+
+.task-form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.task-form input {
+  flex: 1;
+  padding: 10px;
+  font-size: 1rem;
+  background-color: #DBE2EF;
+}
+
+.task-form button {
+  padding: 10px 15px;
+  background-color: #f87777;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.task-filters {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.task-filters button,
+.task-filters input {
+  padding: 10px;
+  font-size: 1rem;
+}
+
+.task-list {
+  display: flex;
+  padding: 0 15px;
+  gap: 60px;
+}
+.pen{
+  font-family: 'Abhaya Libre', sans-serif;
+  font-size: 2rem;
+  margin: 10px 0;
+}
+
+.task-card h3 {
+  margin: 0 0 10px;
+}
+
+.task-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.task-actions button {
+  padding: 5px 10px;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+
+/* Styles for Pending and Completed Tasks */
+.task-card {
+  border: 1px solid #ccc;
+  padding: 15px 30px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  background-color: #F0D1A8;
+}
+
+.task-card.completed {
+  background-color: #C4A49F;
+  
+}
+
+.task-actions button {
+  margin-right: 10px;
+  background-color: transparent;
+  padding: 5px 10px;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.task-actions button:hover{
+  background-color: #d8d5d2;
+}
+
+
+.react-calendar {
+  border-radius: 8px;
+  width: 300px;
+  background-color: #e9ecb5;
+} 
+
+.react-calendar__tile {
+  border-radius: 8px;
+  padding: 5px 
+  
+} 
+
+.react-calendar__tile:hover {
+  background-color: #F23834;
+  
+} 
+
+.react-calendar__tile--now {
+  background-color: #f87777;
+  color: white;
+  font-weight: bold;
+}
+.react-calendar__tile:focus {
+  background-color: #F23834;
+  color: white; 
+  outline: none; 
+}
+
+
+.react-calendar__tile--active {
+  background-color: #F23834;
+  color: white;
+  outline: none; 
+}
+
+
+.react-calendar__tile:focus-visible {
+  outline: none; 
+}
+
+.react-calendar__month-view__weekdays__weekday {
+  color: #580f0f;
+}
+
+.search-bar {
+  padding: 8px 30px;
+  border: 2px solid #F0D1A8;
+  border-radius: 4px;
+}
+
+.search{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.lm{
+  display: flex;
+  justify-content: center;
+}
+.load-more{
+  margin-right: 10px;
+  background-color: transparent;
+  padding: 5px 10px;
+  border: 4px solid #F0D1A8;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+.load-more:hover{
+  background-color: #F0D1A8;
+}
+.load-morec{
+  margin-right: 10px;
+  background-color: transparent;
+  padding: 5px 10px;
+  border: 4px solid #C4A49F;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+.load-morec:hover{
+  background-color: #C4A49F;
+}
+
+.task-count {
+  margin-top: 30px;
+  padding: 10px;
+  border: 2px solid #f87777;
+  border-radius: 5px;
+  background-color: #ffe6e6;
+  
+}
+
+.task-count p{
+  font-family: 'Abhaya Libre', sans-serif;
+}
+
+/* Light Mode */
+.light-mode {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.light-mode .header {
+  background-color: #f0f0f0;
+  color: #000000;
+}
+
+/* Dark Mode */
+
+.dark-mode{
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.dark-mode .cal h2{
+  color: #ffffff;
+
+}
+.dark-mode .task-card{
+  color: #333333;
+}
+.dark-mode .load-more{
+  color: #ffffff;
+}
+.dark-mode .load-more:hover{
+  color: #333333;
+}
+.dark-mode .load-morec{
+  color: #ffffff;
+}
+.dark-mode .load-morec:hover{
+  color: #333333;
+}
+
+/* Toggle Switch */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 25px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+  border-radius: 25px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 18px;
+  width: 18px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #007bff;
+}
+
+input:checked + .slider:before {
+  transform: translateX(24px);
+}
